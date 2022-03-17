@@ -15,4 +15,9 @@ public class SomeController {
     public String getHelloText() {
         return "Hello";
     }
+
+    @GetMapping("/helloworld")
+    public String getHelloWorldText() {
+        return "Hello World";
+    }
 }
