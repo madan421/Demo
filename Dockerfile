@@ -9,3 +9,4 @@ COPY ${DEPENDENCY}/META-INF /app/META-INF
 ## copy files in /BOOT-INF/classes to /app => application classes
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
 ENTRYPOINT ["java","-cp","app:app/lib/*","com.example.demojenkins.DemoJenkinsApplication"]
+EXPOSE 8080
